@@ -1,0 +1,49 @@
+#2019-10-09: loan.truong@cern.ch
+#Fill in the config file following instruction below
+
+#file name (put the file that has all the names of the lists of limits)
+#Where limit folders stored
+foldLimit = /home/loan/Work/Run2/HZdZd4l/HZdZdRunII/Limit/ZdZdLimitSetting/writeXmlPackage/share/root-files/highMass/fiducial     
+
+#Channels
+Channel = 4mu
+Channel = 2e2mu
+Channel = 4e
+
+#particle type
+particle = Zd
+
+#Binnings signal
+#for low mass
+#firstMass = 1.
+#lastMass = 15.
+
+#for high mass:
+firstMass = 15.
+lastMass = 60.
+
+#step size for signal interpolation, or how granular you want for the limit plot
+stepSize = 0.5
+
+#Type of XS:
+xSection = fiducial 
+#xSection = total
+
+#Region
+#region = lowMass
+region = highMass
+#region = AS
+
+#Integrated Lumi:
+lumi = 139  #fb-1
+#lumi = 36.1
+
+#centre-of-mass energy:
+cms = 13 	#TeV
+
+#Blind or not
+obs = 0
+#obs = 1	#1 for unblinded
+
+#Name Tag
+nameTag = july2019

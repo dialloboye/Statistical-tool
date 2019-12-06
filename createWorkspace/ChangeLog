@@ -1,0 +1,44 @@
+2019-Dec-6:	1, Narrow down <mll> range for fitting is now for all cases.
+However still limiting getRangeForFile.cxx to Nominal only. Should modify it
+asap.
+		2, 
+
+2019-Dec-2:	1, There are no big differences between this version and the
+writeXmlPackage_splitTotXS apart from using to_String(int) for mHmZd pair
+		2, File src/getRangeForFile.cxx is now limitted to Nominal
+		only since the low mass input is troublesome
+		3, Files with "Loan" are made for narrowed input only, have to
+		improve the code later for general case and with config file
+
+2019-Nov-20:	1, Additional scalar now is in as limit on mu. A remapping of
+binning on efficiency and acceptance is applied. Must provide correct mapping
+and ranging.
+
+2019-Nov-12:	1, do total XS limit without hadding files (split channels)
+		
+
+
+2019-Nov-4: 	1, Modified writeXmlPackage to be able to run different config files for different input sets.
+		2, Modified makeBandLimitPlot to read in config files as well.
+
+2019-Oct-7: 	1, Modified src/createOneSignalRootFile.cxx to have mean/sigma from STAT folder and use for TDirectories where mean/sigma are not provided.
+		2, Modifed function xmlFile() in main.cxx to have totalXS xml written out for lowMass (skipping rescale,hadd,... procedure as in highMass). Have to fix it for general case.
+		3, Modifying makeBandPlots script to be used in general purpose, consider making a config file
+
+
+2019-Oct-2:	1, Discovered wrong eff in low mass signal root files. Fixed by Peter. Made a script to check input before processing: compareLowmass.C (has to find a place to store it).
+		2, bkg histograms now are in the right binnings.
+		3, 
+
+2019-Sept-30: 	1, Can make fiducial WS for low mass, with no TDirectoryFiles in bkg root file.
+	      	2, Avoided signal mass points are removed at Splitting step.
+		3, Bkg file is to be fixed in binnings.
+Pay attention for signal:
+    int nBin=190;
+    double firstBin=0.83;
+    double lastBin=19.83;
+
+
+2019-Sept-29: work with low mass input
+2019-Aug-07: split channels DONE
+
