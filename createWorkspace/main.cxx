@@ -283,6 +283,8 @@ int main(int argc, char *argv[])
     }
     else if(xSection == "total")
 	totalXS(fileE, fileA, pathInput, xSection, region, particle, lumi, cms, firstBin, lastBin, stepSize, fBin, lBin, binWidth, obs, narrow);
+    else if(xSection == "XSRatio")
+	muLimit(fileE, fileA, pathInput, xSection, region, particle, lumi, cms, fBin, lBin, binWidth, obs, narrow);
     else
 	cout << "Invalid cross section type, please choose either fiducial or total in your run.cfg file\n";
     
@@ -521,6 +523,8 @@ void muLimit(string fileE, string fileA, string pathInput, string xSection, stri
 
     
     double doNarrow = (narrow == 1) ? true : false;
+    if(doNarrow)
+	narrowFile(fBin, lBin, binWidth,  pathInput,  region, particle);
     xmlFile(pathInput, particle, xSection, region, 0, doNarrow);
 }
 
@@ -555,15 +559,15 @@ void scalingSignalForTotalXS()
 		newFileName = signalFileName.substr(0, posLastSlash) + "/BRscaled_" + signalFileName.substr(posLastSlash + 1,  signalFileName.length() - posLastSlash - 1);
 		//		cout << "new File name is: " << newFileName << endl;
 		
-
+		
 		TFile *fileNew = new TFile(newFileName.c_str(),"RECREATE");
 		scalingHist(fileOriginal, fileNew, channel);
 		fileNew->Close();
 		fileNew->Delete();
-    
+		
 		fileOriginal->Close();
 		fileOriginal->Delete();
-  
+		
 		outFileGaussianForTotalXS << newFileName << "\n";
 	    }
     }

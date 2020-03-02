@@ -19,11 +19,21 @@ void splitDiscreteSignal(std::string& rootFileName,
       2. make new histograms for each bin
       3. remember to extract the bin errors
     */
+        /* Old pairing
     map <int, pair<int,int> > map_mHmZd_vs_Bin;
+    
     //(mzd, ms ) = (20,175), (50,175), (50,400), (65,750), (80,325), (100, 400), (150,750), (250,800) (70, 250)
     pair <int,int> mHmZd;
     vector<int> mH {175, 175, 400, 750, 325, 400, 750, 800, 250};
     vector<int> mZd {20, 50, 50, 65, 80, 100, 150, 250, 70};
+    */
+
+    /* New Pairing, have to check which one is correct */
+    map <int, pair<string,string> > map_mHmZd_vs_Bin;
+    //(mzd, ms ) = (20,175), (50,175), (50,400), (65,750), (70, 250), (70, 250 NW), (80,325), (100, 400), (150,750), (250,800)
+    pair <string,string> mHmZd;
+    vector<string> mH {"175", "175", "400", "750", "250", "250NW", "325", "400", "750", "800"};
+    vector<string> mZd {"20", "50", "50", "65", "70", "70", "80", "100", "150", "250"};
     for (int m=0; m< mH.size(); ++m){
 	mHmZd = make_pair( mH.at(m), mZd.at(m) );
 	map_mHmZd_vs_Bin[m] = mHmZd;
@@ -49,7 +59,8 @@ void splitDiscreteSignal(std::string& rootFileName,
     string newFileName[numBin];
     for(int i=0; i < numBin; ++i){
 	mHmZd = map_mHmZd_vs_Bin[i];
-	newFileName[i] = rootFileName.substr(0, rootFileName.find_last_of("/") ) + "/signal_" + channel + "channel" + "_m" + particle + to_string(mHmZd.second) + "_mH" + to_string(mHmZd.first) + "GeV.root";
+	newFileName[i] = rootFileName.substr(0, rootFileName.find_last_of("/") ) + "/signal_" + channel + "channel" + "_m" + particle + mHmZd.second + "_mH" + mHmZd.first + "GeV.root";
+	//	newFileName[i] = rootFileName.substr(0, rootFileName.find_last_of("/") ) + "/signal_" + channel + "channel" + "_m" + particle + to_string(mHmZd.second) + "_mH" + to_string(mHmZd.first) + "GeV.root";
 	
 	cout << "path = " << rootFileName.substr(0, rootFileName.find_last_of("/") )<< "\n";
 	cout << "channel " << channel << ", particle: " << particle << "\n";

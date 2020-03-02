@@ -44,7 +44,7 @@ void getHistogramForFile(std::string& rootFileName, int firstBin, int lastBin)
 		    TH1D* hist = (TH1D*) keyHist->ReadObj();
 
 		    //pay attention that ".ls" shows key's Names which can be different from histograms' names and titles
-		    //cout << "KEY NAME " <<   keyHist->GetName() << endl;
+		    cout << "KEY NAME " <<   keyHist->GetName() << endl;
 	    
 		    const char* histName = keyHist->GetName();
 		    int numBin = lastBin - firstBin + 1;

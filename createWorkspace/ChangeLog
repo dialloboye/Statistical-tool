@@ -1,7 +1,13 @@
-2019-Dec-6:	1, Narrow down <mll> range for fitting is now for all cases.
-However still limiting getRangeForFile.cxx to Nominal only. Should modify it
-asap.
-		2, 
+2020-Feb-10:	1, Change NormFactor range for POI (signal strength) from 0 to 0.5 to reduce the fitting range
+		2, Change from Poisson constraint to Gaussian constraint for
+		data statistical uncertainties
+		3, Make if(dirName != "Nominal" && dirName != "STAT" &&
+		dirName.find("UncorrUncertainty") == string::npos &&
+		dirName.find("CorrUncertainty") ==string::npos ) in the file
+		src/writeSampleXml.cxx to remove SIMPLIFIED scheme
+		uncertainties.
+
+2020-Jan-31:	1, Have narrow ranges for Additional scalar as well
 
 2019-Dec-2:	1, There are no big differences between this version and the
 writeXmlPackage_splitTotXS apart from using to_String(int) for mHmZd pair

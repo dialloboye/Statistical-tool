@@ -14,7 +14,7 @@ void writeChannelXml(string channelXmlFileName, string channel, ofstream& channe
     channelWriteFile << "<!DOCTYPE Channel  SYSTEM '" << get_current_dir_name() << "/share/HistFactorySchema.dtd'> \n";
     channelWriteFile << "<Channel Name=\"SR" << channel << "_2019\" InputFile=\"" << mapRootFileName["data"] << "\" > \n \n";
     channelWriteFile << "<Data HistoName=\"Data\"/> \n";
-    channelWriteFile <<" <StatErrorConfig RelErrorThreshold=\"0.0\" \t ConstraintType=\"Poisson\" /> \n";
+    channelWriteFile <<" <StatErrorConfig RelErrorThreshold=\"0.0\" \t ConstraintType=\"Gaussian\" /> \n"; //Loan: has to use Gaussian constraint due to RooStat bug in handling Poisson constraint
     
     //Write down signal
     writeSampleXml(mapRootFileName["sig"],channelWriteFile,"sig");

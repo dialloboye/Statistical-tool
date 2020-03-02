@@ -30,7 +30,9 @@ void writeSampleXml(string rootFile, ofstream& writeFile, string type){//functio
 	TDirectory *dir = (TDirectory*) key->ReadObj();
 	string dirName = dir->GetName();
 	
-	if(dirName != "Nominal" && dirName != "STAT"){
+	
+	//if(dirName != "Nominal" && dirName != "STAT"){ //Loan: origional
+	if(dirName != "Nominal" && dirName != "STAT" && dirName.find("UncorrUncertainty") == string::npos && dirName.find("CorrUncertainty") ==string::npos ){//Loan: to remove simplified model uncertainties
 	     vectorTDirectory.push_back(dirName);
 	     //cout << "dirName=" << dirName << endl;
 	}
@@ -46,7 +48,7 @@ void writeSampleXml(string rootFile, ofstream& writeFile, string type){//functio
 	writeFile << "<Sample Name=\"" << type << "\" \t InputFile=\"" << rootFile << "\" \t HistoName=\"" << type << "\" \t HistoPath=\"STAT/\" \t NormalizeByTheory=\"True\" > \n";
 	writeFile << " <StatError Activate=\"True\" /> \n";
 	if(type=="sig")
-	    writeFile << "    <NormFactor Name=\"mu\" Val=\"0\" \t Low=\"-10.\" \t High=\"15.\" \t Const=\"False\"/> \n";
+	    writeFile << "    <NormFactor Name=\"mu\" Val=\"0.\" \t Low=\"0.\" \t High=\"0.5\" \t Const=\"False\"/> \n";
 	
 	
 	for(size_t uncert=0; uncert<numUncerts; ++uncert){    //write down systematics

@@ -61,6 +61,6 @@ void makeGaussianHist(TH1D* hist,
 	    hist->SetBinError(i, lumi*errNorm*(ROOT::Math::gaussian_cdf(hist->GetXaxis()->GetBinUpEdge(i), sigma, mean)-ROOT::Math::gaussian_cdf(hist->GetXaxis()->GetBinLowEdge(i), sigma, mean) ) );
 	}// Will Buttinger's way when binning is not 1 GeV
     
-     cout << "mean=" << mean << ", sigma=" << sigma << ", norm=" << norm  << ", errNorm = " << errNorm << endl;
-     cout << "Integral=" <<	hist->Integral() << endl;
+     //cout << "mean=" << mean << ", sigma=" << sigma << ", norm=" << norm  << ", errNorm = " << errNorm << endl;
+     //cout << "Integral=" <<	hist->Integral() << endl;
 }
