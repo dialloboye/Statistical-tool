@@ -295,7 +295,8 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-//Get the path of the run executable
+//Get the path of the run executable (Ubuntu)
+/*
 string getWorkDirectoryPath()
 {
     char arg1[20];
@@ -306,7 +307,18 @@ string getWorkDirectoryPath()
     readlink( arg1, exepath, 1024 );
     return string( exepath );
 }
+*/
 
+string getWorkDirectoryPath(){
+    char buffer[100];
+    char *answer = getcwd(buffer, sizeof(buffer));
+    string s_cwd;
+    if (answer)
+	{
+	    s_cwd = answer;
+	}
+    return string(answer);
+}
 
 //function to do interpolation for non-generated signal mass points
 void interpolateFile(string inFileSignalName, double firstBin, double lastBin, double stepSize, string fileType)
