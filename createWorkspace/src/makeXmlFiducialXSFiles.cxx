@@ -6,6 +6,7 @@
 #include "include/writeDriverXml.h"
 #include "include/writeSampleXml.h"
 #include "include/common.h"
+#include<unistd.h>
 
 using namespace std;
 
@@ -20,7 +21,9 @@ void makeXmlFiducialXSFiles(string signalRootFile,
 			    ofstream& fileRunAsymptotics,
 			    bool doNarrow){
     std::cout << "Begin making fiducial XMLs \n";
-    string currentDir = get_current_dir_name();
+    char wd[256]; 
+ string currentDir = getcwd(wd, 256);
+ //string currentDir = get_current_dir_name();
     cout << "current directory will be used for path to input: " << currentDir << "\n";
 	
     //Get bkg and data input corresponding to each channel

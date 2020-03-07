@@ -2,6 +2,7 @@
 
 
 #include "include/writeChannelXml.h"
+#include<unistd.h>
 
 
 using namespace std;
@@ -11,7 +12,9 @@ using namespace std;
 void writeChannelXml(string channelXmlFileName, string channel, ofstream& channelWriteFile, map<string,string> mapRootFileName){
 
     //Write down the header
-    channelWriteFile << "<!DOCTYPE Channel  SYSTEM '" << get_current_dir_name() << "/share/HistFactorySchema.dtd'> \n";
+  char wd[256]; 
+ string currentDir = getcwd(wd, 256);
+    channelWriteFile << "<!DOCTYPE Channel  SYSTEM '" << currentDir << "/share/HistFactorySchema.dtd'> \n";
     channelWriteFile << "<Channel Name=\"SR" << channel << "_2019\" InputFile=\"" << mapRootFileName["data"] << "\" > \n \n";
     channelWriteFile << "<Data HistoName=\"Data\"/> \n";
     channelWriteFile <<" <StatErrorConfig RelErrorThreshold=\"0.0\" \t ConstraintType=\"Gaussian\" /> \n"; //Loan: has to use Gaussian constraint due to RooStat bug in handling Poisson constraint

@@ -32,8 +32,11 @@ void splitDiscreteSignal(std::string& rootFileName,
     map <int, pair<string,string> > map_mHmZd_vs_Bin;
     //(mzd, ms ) = (20,175), (50,175), (50,400), (65,750), (70, 250), (70, 250 NW), (80,325), (100, 400), (150,750), (250,800)
     pair <string,string> mHmZd;
-    vector<string> mH {"175", "175", "400", "750", "250", "250NW", "325", "400", "750", "800"};
-    vector<string> mZd {"20", "50", "50", "65", "70", "70", "80", "100", "150", "250"};
+    //vector<string> mH {"175", "175", "400", "750", "250", "250NW", "325", "400", "750", "800"};// for SR1
+    // vector<string> mZd {"20", "50", "50", "65", "70", "70", "80", "100", "150", "250"}; //for SR1
+
+    vector<string> mH {"30", "40", "50", "60", "70", "80", "90", "100"};// for SR2
+    vector<string> mZd {"15", "15", "20", "25", "30", "35", "40", "45"}; //for SR2
     for (int m=0; m< mH.size(); ++m){
 	mHmZd = make_pair( mH.at(m), mZd.at(m) );
 	map_mHmZd_vs_Bin[m] = mHmZd;

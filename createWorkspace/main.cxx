@@ -8,6 +8,8 @@
 #include "include/reBinHistogram.h"
 
 #include <vector>
+#include<unistd.h>
+
 
 #define CONFIG_SIZE (256)
 #define F_ACCEPTANCE (1)
@@ -471,7 +473,7 @@ void xmlFile(string pathInput, string particle, string xSection, string region, 
 		    //		    cout << "done " << particle << ", at mass point " << mass << " GeV \n";
 		}
 	}
-    fileRunAsymptotics << "cd " << get_current_dir_name() << "\n";    
+    fileRunAsymptotics << "cd " << getWorkDirectoryPath() << "\n";    
     fileRunWS.close();
     fileRunAsymptotics.close();
     cout << "Finish making XML \n";    

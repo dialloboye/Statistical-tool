@@ -2,6 +2,7 @@
 
 
 #include "include/writeDriverXml.h"
+#include<unistd.h>
 
 using namespace std;
 
@@ -11,8 +12,10 @@ void writeDriverXml(vector<string> vec_channelXmlFileName, ofstream& myDriverFil
     //function to write out HistFactory syntax for the driver xml file
 
     //==================Write down the driver xml file================
-    myDriverFile << "<!--Driver xml or top xml, we need only one of this kind. It combines all channel xml files -->\n" ; 
-    myDriverFile << "<!DOCTYPE Combination  SYSTEM '" << get_current_dir_name() << "/share/HistFactorySchema.dtd'> \n"; 
+    myDriverFile << "<!--Driver xml or top xml, we need only one of this kind. It combines all channel xml files -->\n" ;
+    char wd[256]; 
+ string currentDir = getcwd(wd, 256);
+    myDriverFile << "<!DOCTYPE Combination  SYSTEM '" << currentDir << "/share/HistFactorySchema.dtd'> \n"; 
     myDriverFile << "<Combination OutputFilePrefix=\"ATLAS_HZdZd4l\"> \n";
 
     for (int i = 0; i < vec_channelXmlFileName.size(); ++i){

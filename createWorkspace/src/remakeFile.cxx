@@ -1,5 +1,6 @@
 #include "include/reBinHistogram.h"
 #include "include/common.h"
+#include<unistd.h>
 
 using namespace std;
 
@@ -27,8 +28,9 @@ void remakeFile(std::string& rootFileName, double binFirst, double binLast, doub
     
     getSubStrBetweenTwoStrings(shortName, particle , "GeV", mass);
     cout << "MASS " << mass << endl;
-
-    string currentDir = get_current_dir_name();
+char wd[256]; 
+ string currentDir = getcwd(wd, 256);
+    //string currentDir = get_current_dir_name();
     cout << "CURRENT DIR " << currentDir << endl;
 
     string mainBkg = currentDir + "/" + pathInput + "/bkg/" + region + "/bkg_" + channel + "channel_" + particle + ".root";

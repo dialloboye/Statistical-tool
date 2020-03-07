@@ -5,6 +5,7 @@
 #include "include/writeSampleXml.h"
 #include "include/writeChannelXml.h"
 #include "include/common.h"
+#include<unistd.h>
 
 using namespace std;
 
@@ -33,8 +34,10 @@ void makeXmlTotalXSFiles(string signalRootFile,
 	    vecChannel.push_back("4mu");
 	}
     int numChannels = vecChannel.size();
+     char wd[256]; 
+ string currentDir = getcwd(wd, 256);
     
-    string currentDir = get_current_dir_name();
+    // string currentDir = get_current_dir_name();
     //    cout << "current directory will be used for path to input: " << currentDir << "\n";
 	
     //Get bkg and data input corresponding to each channel
