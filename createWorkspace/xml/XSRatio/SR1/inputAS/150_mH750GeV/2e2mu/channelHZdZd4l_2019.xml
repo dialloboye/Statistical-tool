@@ -3,7 +3,7 @@
  
 <Data HistoName="Data"/> 
  <StatErrorConfig RelErrorThreshold="0.0" 	 ConstraintType="Gaussian" /> 
-<Sample Name="sig" 	 InputFile="/Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/inputAS/sig/XSRatio/SR1/BRscaled_gaussiansignal_2e2muchannel_mZd150_mH750GeVreBin.root" 	 HistoName="sig" 	 HistoPath="STAT/" 	 NormalizeByTheory="True" > 
+<Sample Name="sig" 	 InputFile="/Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/inputAS/sig/XSRatio/SR1/BRscaled_gaussiansignal_2e2muchannel_mZd150_mH750GeV.reBin.root" 	 HistoName="sig" 	 HistoPath="STAT/" 	 NormalizeByTheory="True" > 
  <StatError Activate="True" /> 
     <NormFactor Name="mu" Val="0." 	 Low="0." 	 High="0.5" 	 Const="False"/> 
    <HistoSys Name="LUMI" 	 HistoPathLow="LUMI/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="LUMI/" 	HistoNameHigh="sig_up"/> 

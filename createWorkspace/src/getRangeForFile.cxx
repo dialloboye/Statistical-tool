@@ -20,7 +20,8 @@ void getRangeForFile(std::string& rootFileName, int &firstBin, int &lastBin)
     string classDir, classHist;
     
     TIter next(fileOriginal->GetListOfKeys());
-    double threshold = 0.01;
+    double threshold = 0.1; //for SR2
+    //double threshold = 0.00001; //for SR1
 
     //loop over directories to get firstBin, lastBin with > 0.1 yield
 
@@ -37,14 +38,14 @@ void getRangeForFile(std::string& rootFileName, int &firstBin, int &lastBin)
 	    while( (keyHist = (TKey*) nextHist() ) )
 		{
 		    classHist = keyHist->GetClassName();
-		    if(classHist != "TH1D") continue;
+		    if(classHist != "TH1D" && classHist != "TH1F") continue;
 		    
 		    TH1D* hist = (TH1D*) keyHist->ReadObj();
 		    const char* histName = hist->GetName();
 
-		    //cout << "Histo " << histName << "\n";
+		    cout << "Histo " << histName << "\n";
 		    getNonZeroBinRange(hist, threshold, firstBin, lastBin);
-		    //cout << firstBin << ", " << lastBin << endl;
+		    cout << firstBin << ", " << lastBin << endl;
 		    hist->Delete();
 		}
 	}

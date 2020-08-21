@@ -1,0 +1,47 @@
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.18/04                  https://root.cern |
+  |                               (c) 1995-2019, The ROOT Team |
+  | Built for macosx64 on Sep 11 2019, 15:38:23                |
+  | From tags/v6-18-04@v6-18-04                                |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+
+Processing runAsymptoticsCLs.C+("/Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR2/inputASSR2/30_mH70GeV/ATLAS_HZdZd4l_combined_allsys_model.root","combined","ModelConfig","asimovData","asimovData_0","XSRatio/SR2/inputASSR2/4mu_mZd_30_mH70GeV","125",0.95)...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+Creating asimov data at mu = 0, profiling at mu = 0
+------------------------
+Getting limit for nll: nll_simPdf_asimovData_0_with_constr
+Initial guess:  10.3478
+Sigma(obs):     5.27706
+Sigma(mu,0):    5.27706
+muhat:          0
+qmu95:          3.83948
+qmu:            0.0359101
+pmu:            0.424851
+1-pb:           0.0382471
+CLs:            0.441746
+
+----------------------
+Starting iteration 0 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 10.3478
+Sigma(obs):     7.22911
+Sigma(mu,0):    7.22911
+muhat:          0
+pmu:            0.0761572
+1-pb:           0.5
+CLs:            0.152314
+qmu95:          4.78771
+qmu:            2.04892
+qmuA0:          2.04892
+Precision:      0.0708777
+Correction:    3.82777
+New guess:      14.1755
+
+----------------------
+Starting iteration 1 of nll_simPdf_asimovData_0_with_constr

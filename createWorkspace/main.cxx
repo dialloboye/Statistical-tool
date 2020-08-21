@@ -250,7 +250,7 @@ int main(int argc, char *argv[])
 	return 1;
     }
 
-    system("./clean.sh");
+    //system("./clean.sh");
     //========================Configuring part=================================
     FILE *f = fopen(argv[1], "r");
     char buf[CONFIG_SIZE];
@@ -280,11 +280,15 @@ int main(int argc, char *argv[])
 
     //===============================Running part====================================
     if (xSection == "fiducial"){
+        system("./clean.sh");
 	fiducialXS(fileE, pathInput, xSection, region, particle, lumi, cms, firstBin, lastBin, stepSize, fBin, lBin, binWidth, obs, narrow);
 	//narrowFile();
     }
     else if(xSection == "total")
+      {
+	  system("./clean.sh");
 	totalXS(fileE, fileA, pathInput, xSection, region, particle, lumi, cms, firstBin, lastBin, stepSize, fBin, lBin, binWidth, obs, narrow);
+      }
     else if(xSection == "XSRatio")
 	muLimit(fileE, fileA, pathInput, xSection, region, particle, lumi, cms, fBin, lBin, binWidth, obs, narrow);
     else
@@ -523,17 +527,17 @@ void totalXS(string fileE, string fileA, string pathInput, string xSection, stri
 void muLimit(string fileE, string fileA, string pathInput, string xSection, string region, string particle, double lumi, string cms, double fBin, double lBin, double binWidth, int obs, int narrow)
 {
     double ggFXS =  6.02392; //fb, from https://gitlab.cern.ch/atlas-phys/exot/ueh/EXOT-2016-22/ZdZd13TeV/blob/master/ZdZdAnalysis/share/crossSections.txt
-    splitFile(fileE, particle);//eff
-    splitFile(fileA, particle, "acceptance"); //acc
+    // splitFile(fileE, particle);//eff used for high mass inputs
+    //splitFile(fileA, particle, "acceptance"); //acc used for high mass inputs
     
     //here input the Higgs XS as well so that the parameter of interest is sigma(S->ZdZd->4l)/sigma_SM(H->ZZ*->4l) 
-    makeGaussianModelFile(xSection, fBin, lBin, binWidth, lumi*ggFXS, "acceptance");
+    // makeGaussianModelFile(xSection, fBin, lBin, binWidth, lumi*ggFXS, "acceptance"); used for high mass inputs
     
     //this part is to make workspace with scaling channels 
-    if(particle == "Zd" && region != "lowMass"){
+    /* if(particle == "Zd" && region != "lowMass"){ //used for high mass inputs 
     	scalingSignalForTotalXS();
     	//haddSignalFileForTotalXS();// can do combination without hadding signal files. If wanna hadd, have to change the list file name (Loan: to check)
-    }
+    }*/
 
     
     double doNarrow = (narrow == 1) ? true : false;

@@ -24,7 +24,9 @@ void getHistogramForFile(std::string& rootFileName, int firstBin, int lastBin)
     TIter next(fileOriginal->GetListOfKeys());
     TFile *fileNew = new TFile(newFileName.c_str(),"RECREATE");
 
-    double threshold = 0.1;
+    double threshold = 0.1; //for SR2
+    //double threshold = 0.00001; // for SR1
+    
 
     while ( (keyDir = (TKey*) next() ) )
 	{

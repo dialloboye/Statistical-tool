@@ -1,0 +1,59 @@
+<!DOCTYPE Channel  SYSTEM '/Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/share/HistFactorySchema.dtd'> 
+<Channel Name="SR4mu_2019" InputFile="/Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/inputASSR2_4/data/SR2/data_4muchannel_mZd70_mH250GeVreBin.root" > 
+ 
+<Data HistoName="Data"/> 
+ <StatErrorConfig RelErrorThreshold="0.0" 	 ConstraintType="Gaussian" /> 
+<Sample Name="sig" 	 InputFile="/Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/inputASSR2_4/sig/XSRatio/SR2/BRscaled_gaussiansignal_4muchannel_mZd70_mH250GeV.rooreBin.root" 	 HistoName="sig" 	 HistoPath="STAT/" 	 NormalizeByTheory="True" > 
+ <StatError Activate="True" /> 
+    <NormFactor Name="mu" Val="0." 	 Low="0." 	 High="0.5" 	 Const="False"/> 
+   <HistoSys Name="LUMI" 	 HistoPathLow="LUMI/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="LUMI/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="QCDSCALE" 	 HistoPathLow="QCDSCALE/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="QCDSCALE/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="PDF" 	 HistoPathLow="PDF/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="PDF/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="EL_EFF_ID_TOTAL" 	 HistoPathLow="EL_EFF_ID_TOTAL/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="EL_EFF_ID_TOTAL/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="EL_EFF_ISO_TOTAL" 	 HistoPathLow="EL_EFF_ISO_TOTAL/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="EL_EFF_ISO_TOTAL/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="EL_EFF_RECO_TOTAL" 	 HistoPathLow="EL_EFF_RECO_TOTAL/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="EL_EFF_RECO_TOTAL/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUON_EFF_ISO_STAT" 	 HistoPathLow="MUON_EFF_ISO_STAT/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUON_EFF_ISO_STAT/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUON_EFF_ISO_SYS" 	 HistoPathLow="MUON_EFF_ISO_SYS/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUON_EFF_ISO_SYS/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUON_EFF_RECO_STAT" 	 HistoPathLow="MUON_EFF_RECO_STAT/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUON_EFF_RECO_STAT/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUON_EFF_RECO_STAT_LOWPT" 	 HistoPathLow="MUON_EFF_RECO_STAT_LOWPT/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUON_EFF_RECO_STAT_LOWPT/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUON_EFF_RECO_SYS" 	 HistoPathLow="MUON_EFF_RECO_SYS/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUON_EFF_RECO_SYS/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUON_EFF_RECO_SYS_LOWPT" 	 HistoPathLow="MUON_EFF_RECO_SYS_LOWPT/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUON_EFF_RECO_SYS_LOWPT/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUON_EFF_TTVA_STAT" 	 HistoPathLow="MUON_EFF_TTVA_STAT/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUON_EFF_TTVA_STAT/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUON_EFF_TTVA_SYS" 	 HistoPathLow="MUON_EFF_TTVA_SYS/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUON_EFF_TTVA_SYS/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="PRW_DATASF" 	 HistoPathLow="PRW_DATASF/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="PRW_DATASF/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="EG_RESOLUTION_ALL" 	 HistoPathLow="EG_RESOLUTION_ALL/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="EG_RESOLUTION_ALL/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="EG_SCALE_ALL" 	 HistoPathLow="EG_SCALE_ALL/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="EG_SCALE_ALL/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUONS_ID" 	 HistoPathLow="MUONS_ID/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUONS_ID/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUONS_MS1" 	 HistoPathLow="MUONS_MS1/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUONS_MS1/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUONS_SAGITTA_RESBIAS" 	 HistoPathLow="MUONS_SAGITTA_RESBIAS/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUONS_SAGITTA_RESBIAS/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUONS_SAGITTA_RHO" 	 HistoPathLow="MUONS_SAGITTA_RHO/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUONS_SAGITTA_RHO/" 	HistoNameHigh="sig_up"/> 
+   <HistoSys Name="MUONS_SCALE" 	 HistoPathLow="MUONS_SCALE/" 	 HistoNameLow="sig_down" 	 HistoPathHigh="MUONS_SCALE/" 	HistoNameHigh="sig_up"/> 
+  </Sample> 
+
+<Sample Name="bkg" 	 InputFile="/Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/inputASSR2_4/bkg/SR2/bkg_4muchannel_mZd70_mH250GeVreBin.root" 	 HistoName="bkg" 	 HistoPath="STAT/" 	 NormalizeByTheory="True" > 
+ <StatError Activate="True" /> 
+   <HistoSys Name="EL_EFF_ID_TOTAL" 	 HistoPathLow="EL_EFF_ID_TOTAL/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="EL_EFF_ID_TOTAL/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="EL_EFF_ISO_TOTAL" 	 HistoPathLow="EL_EFF_ISO_TOTAL/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="EL_EFF_ISO_TOTAL/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="EL_EFF_RECO_TOTAL" 	 HistoPathLow="EL_EFF_RECO_TOTAL/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="EL_EFF_RECO_TOTAL/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUON_EFF_ISO_STAT" 	 HistoPathLow="MUON_EFF_ISO_STAT/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUON_EFF_ISO_STAT/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUON_EFF_ISO_SYS" 	 HistoPathLow="MUON_EFF_ISO_SYS/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUON_EFF_ISO_SYS/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUON_EFF_RECO_STAT" 	 HistoPathLow="MUON_EFF_RECO_STAT/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUON_EFF_RECO_STAT/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUON_EFF_RECO_STAT_LOWPT" 	 HistoPathLow="MUON_EFF_RECO_STAT_LOWPT/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUON_EFF_RECO_STAT_LOWPT/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUON_EFF_RECO_SYS" 	 HistoPathLow="MUON_EFF_RECO_SYS/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUON_EFF_RECO_SYS/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUON_EFF_RECO_SYS_LOWPT" 	 HistoPathLow="MUON_EFF_RECO_SYS_LOWPT/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUON_EFF_RECO_SYS_LOWPT/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUON_EFF_TTVA_STAT" 	 HistoPathLow="MUON_EFF_TTVA_STAT/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUON_EFF_TTVA_STAT/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUON_EFF_TTVA_SYS" 	 HistoPathLow="MUON_EFF_TTVA_SYS/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUON_EFF_TTVA_SYS/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="PRW_DATASF" 	 HistoPathLow="PRW_DATASF/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="PRW_DATASF/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="LUMI" 	 HistoPathLow="LUMI/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="LUMI/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="QCDSCALE" 	 HistoPathLow="QCDSCALE/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="QCDSCALE/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="PDF" 	 HistoPathLow="PDF/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="PDF/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="EG_RESOLUTION_ALL" 	 HistoPathLow="EG_RESOLUTION_ALL/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="EG_RESOLUTION_ALL/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="EG_SCALE_ALL" 	 HistoPathLow="EG_SCALE_ALL/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="EG_SCALE_ALL/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUONS_ID" 	 HistoPathLow="MUONS_ID/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUONS_ID/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUONS_MS" 	 HistoPathLow="MUONS_MS/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUONS_MS/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUONS_SAGITTA_RESBIAS" 	 HistoPathLow="MUONS_SAGITTA_RESBIAS/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUONS_SAGITTA_RESBIAS/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUONS_SAGITTA_RHO" 	 HistoPathLow="MUONS_SAGITTA_RHO/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUONS_SAGITTA_RHO/" 	HistoNameHigh="bkg_up"/> 
+   <HistoSys Name="MUONS_SCALE" 	 HistoPathLow="MUONS_SCALE/" 	 HistoNameLow="bkg_down" 	 HistoPathHigh="MUONS_SCALE/" 	HistoNameHigh="bkg_up"/> 
+  </Sample> 
+
+</Channel>

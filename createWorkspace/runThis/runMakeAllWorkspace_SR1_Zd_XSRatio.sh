@@ -1,40 +1,32 @@
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/20_mH175GeV/
+cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputASSR1_UB/15_mH30GeV/
 hist2workspace HZdZd4l_2019_driver.xml
 cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
 
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/50_mH175GeV/
+cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputASSR1_UB/15_mH40GeV/
 hist2workspace HZdZd4l_2019_driver.xml
 cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
 
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/50_mH400GeV/
+cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputASSR1_UB/20_mH50GeV/
 hist2workspace HZdZd4l_2019_driver.xml
 cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
 
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/65_mH750GeV/
+cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputASSR1_UB/25_mH60GeV/
 hist2workspace HZdZd4l_2019_driver.xml
 cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
 
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/70_mH250GeV/
+cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputASSR1_UB/30_mH70GeV/
 hist2workspace HZdZd4l_2019_driver.xml
 cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
 
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/70_mH250NWGeV/
+cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputASSR1_UB/35_mH80GeV/
 hist2workspace HZdZd4l_2019_driver.xml
 cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
 
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/80_mH325GeV/
+cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputASSR1_UB/40_mH90GeV/
 hist2workspace HZdZd4l_2019_driver.xml
 cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
 
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/100_mH400GeV/
-hist2workspace HZdZd4l_2019_driver.xml
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
-
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/150_mH750GeV/
-hist2workspace HZdZd4l_2019_driver.xml
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
-
-cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/250_mH800GeV/
+cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputASSR1_UB/45_mH100GeV/
 hist2workspace HZdZd4l_2019_driver.xml
 cd /Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace 
 

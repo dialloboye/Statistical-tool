@@ -1,0 +1,451 @@
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.18/04                  https://root.cern |
+  |                               (c) 1995-2019, The ROOT Team |
+  | Built for macosx64 on Sep 11 2019, 15:38:23                |
+  | From tags/v6-18-04@v6-18-04                                |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+
+Processing runAsymptoticsCLs.C+("/Users/dialloboye/Documents/Programming/LimitCodeFromLoan/xxzx_statistics/createWorkspace/xml/XSRatio/SR1/inputAS/70_mH250GeV/ATLAS_HZdZd4l_combined_allsys_model.root","combined","ModelConfig","asimovData","asimovData_0","XSRatio/SR1/inputAS/4mu_mZd_70_mH250GeV","125",0.95)...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+Creating asimov data at mu = 0, profiling at mu = 0
+------------------------
+Getting limit for nll: nll_simPdf_asimovData_0_with_constr
+Initial guess:  0.302255
+Sigma(obs):     0.154141
+Sigma(mu,0):    0.154141
+muhat:          0
+qmu95:          3.83948
+qmu:            42.0885
+pmu:            0
+1-pb:           1
+CLs:            0.5
+
+----------------------
+Starting iteration 0 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.302255
+Sigma(obs):     0.0486091
+Sigma(mu,0):    0.0486091
+muhat:          0
+pmu:            2.51649e-10
+1-pb:           0.5
+CLs:            5.03299e-10
+qmu95:          2.70555
+qmu:            38.6644
+qmuA0:          38.6644
+Precision:      0.000476588
+Correction:     -0.206937
+New guess:      0.0953176
+
+----------------------
+Starting iteration 1 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.0953176
+Sigma(obs):     0.0191676
+Sigma(mu,0):    0.0191676
+muhat:          0
+pmu:            3.29864e-07
+1-pb:           0.5
+CLs:            6.59728e-07
+qmu95:          2.70624
+qmu:            24.7293
+qmuA0:          24.7293
+Precision:      0.000187928
+Correction:     -0.0577319
+New guess:      0.0375857
+
+----------------------
+Starting iteration 2 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.0375857
+Sigma(obs):     0.0123079
+Sigma(mu,0):    0.0123079
+muhat:          0
+pmu:            0.00112988
+1-pb:           0.5
+CLs:            0.00225976
+qmu95:          2.84896
+qmu:            9.32559
+qmuA0:          9.32559
+Precision:      0.000120673
+Correction:     -0.0134511
+New guess:      0.0241346
+
+----------------------
+Starting iteration 3 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.0241346
+Sigma(obs):     0.0105932
+Sigma(mu,0):    0.0105932
+muhat:          0
+pmu:            0.0113542
+1-pb:           0.5
+CLs:            0.0227083
+qmu95:          3.33695
+qmu:            5.19068
+qmuA0:          5.19068
+Precision:      0.000103861
+Correction:     -0.00336236
+New guess:      0.0207722
+
+----------------------
+Starting iteration 4 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.0207722
+Sigma(obs):     0.0101329
+Sigma(mu,0):    0.0101329
+muhat:          0
+pmu:            0.0201834
+1-pb:           0.5
+CLs:            0.0403668
+qmu95:          3.66565
+qmu:            4.2024
+qmuA0:          4.2024
+Precision:      9.9348e-05
+Correction:     -0.000902598
+New guess:      0.0198696
+
+----------------------
+Starting iteration 5 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.0198696
+Sigma(obs):     0.0100076
+Sigma(mu,0):    0.0100076
+muhat:          0
+pmu:            0.0235473
+1-pb:           0.5
+CLs:            0.0470946
+qmu95:          3.80813
+qmu:            3.94201
+qmuA0:          3.94201
+Precision:      9.81196e-05
+Correction:     -0.00024568
+New guess:      0.0196239
+
+----------------------
+Starting iteration 6 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.0196239
+Sigma(obs):     0.00997339
+Sigma(mu,0):    0.00997339
+muhat:          0
+pmu:            0.0245553
+1-pb:           0.5
+CLs:            0.0491107
+qmu95:          3.84552
+qmu:            3.87157
+qmuA0:          3.87157
+Precision:      9.7784e-05
+Correction:     -6.71299e-05
+New guess:      0.0195568
+
+Found limit for nll nll_simPdf_asimovData_0_with_constr: 0.0195568
+Finished in 7 iterations.
+
+------------------------
+Getting limit for nll: nll_simPdf_asimovData_0_with_constr
+Initial guess:  0.0200473
+Sigma(obs):     0.0100202
+Sigma(mu,0):    0.0100202
+muhat:          0
+qmu95:          4.01686
+qmu:            3.96799
+pmu:            0.0231866
+1-pb:           0.496527
+CLs:            0.0460533
+
+----------------------
+Starting iteration 0 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.0200473
+Sigma(obs):     0.0100323
+Sigma(mu,0):    0.0100323
+muhat:          0
+pmu:            0.0228439
+1-pb:           0.5
+CLs:            0.0456879
+qmu95:          4.0223
+qmu:            3.99307
+qmuA0:          3.99307
+Precision:      0.000100358
+Correction:    2.42722e-05
+New guess:      0.0200716
+
+Found limit for nll nll_simPdf_asimovData_0_with_constr: 0.0200716
+Finished in 1 iterations.
+
+
+Found N * sigma = 2 * 0.0100358
+Creating asimov data at mu = 0.0200716, profiling at mu = 0.0200716
+------------------------
+Getting limit for nll: nll_simPdf_asimovData_0.020072_with_constr
+Initial guess:  0.0404378
+Sigma(obs):     0.0121994
+Sigma(mu,0):    0.0121994
+muhat:          0.0200716
+qmu95:          2.78735
+qmu:            9.04724
+pmu:            0.00131546
+1-pb:           0.379469
+CLs:            0.0021199
+
+----------------------
+Starting iteration 0 of nll_simPdf_asimovData_0.020072_with_constr
+NLL:            nll_simPdf_asimovData_0.020072_with_constr
+Previous guess: 0.0404378
+Sigma(obs):     0.0153205
+Sigma(mu,0):    0.0126528
+muhat:          0.0200716
+pmu:            0.0918671
+1-pb:           0.0309773
+CLs:            0.0948038
+qmu95:          2.81171
+qmu:            1.76716
+qmuA0:          10.2142
+Precision:      0.000227392
+Correction:    0.00504062
+New guess:      0.0454784
+
+----------------------
+Starting iteration 1 of nll_simPdf_asimovData_0.020072_with_constr
+NLL:            nll_simPdf_asimovData_0.020072_with_constr
+Previous guess: 0.0454784
+Sigma(obs):     0.0159795
+Sigma(mu,0):    0.0132557
+muhat:          0.0200716
+pmu:            0.0559211
+1-pb:           0.0328194
+CLs:            0.0578186
+qmu95:          2.7684
+qmu:            2.528
+qmuA0:          11.7707
+Precision:      0.00023302
+Correction:    0.00112564
+New guess:      0.0466041
+
+----------------------
+Starting iteration 2 of nll_simPdf_asimovData_0.020072_with_constr
+NLL:            nll_simPdf_asimovData_0.020072_with_constr
+Previous guess: 0.0466041
+Sigma(obs):     0.0161267
+Sigma(mu,0):    0.0133895
+muhat:          0.0200716
+pmu:            0.0499583
+1-pb:           0.033224
+CLs:            0.0516752
+qmu95:          2.76152
+qmu:            2.70687
+qmuA0:          12.1149
+Precision:      0.00023429
+Correction:    0.000254019
+New guess:      0.0468581
+
+----------------------
+Starting iteration 3 of nll_simPdf_asimovData_0.020072_with_constr
+NLL:            nll_simPdf_asimovData_0.020072_with_constr
+Previous guess: 0.0468581
+Sigma(obs):     0.0161599
+Sigma(mu,0):    0.0134196
+muhat:          0.0200716
+pmu:            0.0486995
+1-pb:           0.0333152
+CLs:            0.0503778
+qmu95:          2.76008
+qmu:            2.74763
+qmuA0:          12.1924
+Precision:      0.000234577
+Correction:    5.73437e-05
+New guess:      0.0469154
+
+Found limit for nll nll_simPdf_asimovData_0.020072_with_constr: 0.0469154
+Finished in 4 iterations.
+
+------------------------
+Getting limit for nll: nll_simPdf_asimovData_0_with_constr
+Initial guess:  0.00858969
+Sigma(obs):     0.00858775
+Sigma(mu,0):    0.00858775
+muhat:          0
+qmu95:          1
+qmu:            1.35054
+pmu:            0.119952
+1-pb:           0.569461
+CLs:            0.278608
+
+----------------------
+Starting iteration 0 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.00858969
+Sigma(obs):     0.00837496
+Sigma(mu,0):    0.00837496
+muhat:          0
+pmu:            0.152531
+1-pb:           0.5
+CLs:            0.305062
+qmu95:          0.947
+qmu:            1.05194
+qmuA0:          1.05194
+Precision:      4.18843e-05
+Correction:     -0.000212831
+New guess:      0.00837686
+
+----------------------
+Starting iteration 1 of nll_simPdf_asimovData_0_with_constr
+NLL:            nll_simPdf_asimovData_0_with_constr
+Previous guess: 0.00837686
+Sigma(obs):     0.00834192
+Sigma(mu,0):    0.00834192
+muhat:          0
+pmu:            0.157644
+1-pb:           0.5
+CLs:            0.315288
+qmu95:          0.991
+qmu:            1.00839
+qmuA0:          1.00839
+Precision:      4.1719e-05
+Correction:     -3.30515e-05
+New guess:      0.00834381
+
+Found limit for nll nll_simPdf_asimovData_0_with_constr: 0.00834381
+Finished in 2 iterations.
+
+
+Found N * sigma = 1 * 0.00834381
+Creating asimov data at mu = 0.00834381, profiling at mu = 0.00834381
+------------------------
+Getting limit for nll: nll_simPdf_asimovData_0.0083438_with_constr
+Initial guess:  0.026648
+Sigma(obs):     0.0104052
+Sigma(mu,0):    0.0104052
+muhat:          0.00834381
+qmu95:          3.08907
+qmu:            4.78062
+pmu:            0.0143909
+1-pb:           0.353987
+CLs:            0.0222764
+
+----------------------
+Starting iteration 0 of nll_simPdf_asimovData_0.0083438_with_constr
+NLL:            nll_simPdf_asimovData_0.0083438_with_constr
+Previous guess: 0.026648
+Sigma(obs):     0.0118045
+Sigma(mu,0):    0.010929
+muhat:          0.00834381
+pmu:            0.0604973
+1-pb:           0.18736
+CLs:            0.0744455
+qmu95:          3.1906
+qmu:            2.4044
+qmuA0:          5.9452
+Precision:      0.000144572
+Correction:    0.00226646
+New guess:      0.0289145
+
+----------------------
+Starting iteration 1 of nll_simPdf_asimovData_0.0083438_with_constr
+NLL:            nll_simPdf_asimovData_0.0083438_with_constr
+Previous guess: 0.0289145
+Sigma(obs):     0.0121183
+Sigma(mu,0):    0.0112254
+muhat:          0.00834381
+pmu:            0.0448026
+1-pb:           0.189883
+CLs:            0.0553038
+qmu95:          3.07837
+qmu:            2.88145
+qmuA0:          6.63481
+Precision:      0.000147489
+Correction:    0.000583331
+New guess:      0.0294978
+
+----------------------
+Starting iteration 2 of nll_simPdf_asimovData_0.0083438_with_constr
+NLL:            nll_simPdf_asimovData_0.0083438_with_constr
+Previous guess: 0.0294978
+Sigma(obs):     0.0121981
+Sigma(mu,0):    0.0113007
+muhat:          0.00834381
+pmu:            0.0414411
+1-pb:           0.190496
+CLs:            0.0511932
+qmu95:          3.05451
+qmu:            3.00746
+qmuA0:          6.81353
+Precision:      0.000148237
+Correction:    0.000149504
+New guess:      0.0296473
+
+----------------------
+Starting iteration 3 of nll_simPdf_asimovData_0.0083438_with_constr
+NLL:            nll_simPdf_asimovData_0.0083438_with_constr
+Previous guess: 0.0296473
+Sigma(obs):     0.0122185
+Sigma(mu,0):    0.0113199
+muhat:          0.00834381
+pmu:            0.0406193
+1-pb:           0.19065
+CLs:            0.0501875
+qmu95:          3.04868
+qmu:            3.03995
+qmuA0:          6.85941
+Precision:      0.000148428
+Correction:    3.82015e-05
+New guess:      0.0296855
+
+Found limit for nll nll_simPdf_asimovData_0.0083438_with_constr: 0.0296855
+Finished in 4 iterations.
+
+------------------------
+Getting limit for nll: nll_simPdf_asimovData_with_constr
+Initial guess:  0.0195395
+Sigma(obs):     0.00996402
+Sigma(mu,0):    0.00996402
+muhat:          1.634e-06
+qmu95:          3.83927
+qmu:            3.85235
+pmu:            0.0248381
+1-pb:           0.500693
+CLs:            0.0497451
+
+----------------------
+Starting iteration 0 of nll_simPdf_asimovData_with_constr
+NLL:            nll_simPdf_asimovData_with_constr
+Previous guess: 0.0195395
+Sigma(obs):     0.00996078
+Sigma(mu,0):    0.00996161
+muhat:          1.634e-06
+pmu:            0.0249116
+1-pb:           0.5
+CLs:            0.0498231
+qmu95:          3.8383
+qmu:            3.8474
+qmuA0:          3.8474
+Precision:      9.76687e-05
+Correction:     -5.76285e-06
+New guess:      0.0195337
+
+Found limit for nll nll_simPdf_asimovData_with_constr: 0.0195337
+Finished in 1 iterations.
+
+Guess for bands
++2sigma:  0.0364869
++1sigma:  0.0272174
+-1sigma:  0.0140918
+-2sigma:  0.0104966
+
+Correct bands
++2sigma:  0.0469154
++1sigma:  0.0296855
+-1sigma:  0.0140918
+-2sigma:  0.0104966
+Median:   0.0195568
+Observed: 0.0195337
+
+Finished with 36 calls to minimize(nll)
+Real time 0:03:30, CP time 204.960
