@@ -1,14 +1,14 @@
-There are problem with ROOT 6.18 RooFit, it is not compatible with older version of ROOT.
-
 
 
 1. Setup root (your normal version)
 2. To compile: make
-3. To run: ./main.exe config/configFILE 
+3. To run: ./main.exe config/runAS.cfg 
 you can pick up a config file inside that folder and modify it 
-4. Pay attention: have to change the path written in listInput/list*, it's set now to my local address
+4. Pay attention: have to change the path written in listGaussianSignal, it's set now to my local address
 5. Once finish running, have to make workspace and run asymptotic limits by: 
-source runThis/TheRelevantFile
+source runThis/runMakeAllWorkspace_SR2_Zd_XSRatio.sh
+then:
+source runThis/runAsymptoticsLimit_SR2_Zd_XSRatio.sh
 
 
 
